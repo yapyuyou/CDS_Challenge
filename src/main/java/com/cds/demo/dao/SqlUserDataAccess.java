@@ -17,11 +17,6 @@ public class SqlUserDataAccess implements UserDao {
     private JdbcTemplate jdbcTemplate;
 
     @Override
-    public int addUser(String name, float salary) {
-        return 1;
-    }
-
-    @Override
     public Result getUsers() throws SQLException {
         String sql = "SELECT * FROM USERS WHERE SALARY BETWEEN 0 AND 4000";
 

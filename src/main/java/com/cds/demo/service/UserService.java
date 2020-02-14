@@ -19,9 +19,5 @@ public class UserService {
         this.userDao = userDao;
     }
 
-    public int addUser(User user) {
-        return userDao.addUser(user.getName(), user.getSalary());
-    }
-
     public Result getUsers() throws SQLException { return userDao.getUsers(); }
 }
