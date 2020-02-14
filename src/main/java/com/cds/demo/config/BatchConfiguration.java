@@ -98,5 +98,4 @@ public class BatchConfiguration {
         itemReader.setResource(csvFile);
         return itemReader;
     }
-
 }
